@@ -1,0 +1,128 @@
+*{
+    box-sizing: border-box;
+}
+body{
+margin: 0;
+}
+.circle-image nav ul{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+.circle-image{
+    margin-top:0px;
+    background: url("../images/1.png") no-repeat right top/50%;
+    height:100vh;
+    
+}
+.banner-cta{
+    border-radius: 20px;
+}
+.contact-us{
+    background: url("../images/7.png") no-repeat center center/cover;
+}
+.bg-blur{
+    background:white url("../images/8.png") no-repeat center center/100%;
+}
+.user-img{
+    position: relative;
+}
+.user-img-one{
+    position: absolute;
+}
+.bg-footer{
+    background: url("../images/15.png") no-repeat center center/cover;
+}
+footer input{
+    background-color: transparent;
+    border: 1px solid grey;
+}
+footer ::placeholder{
+    color: yellow;
+}
+a.left
+{
+    /* position: relative; */
+    text-decoration: none;
+}
+
+a.left::after {
+    content: "";
+    display: block;
+    /* margin:auto; */
+    height: 2px;
+    width: 0;
+    background: white;
+    transition: width 400ms;
+    margin-top:5px;
+}
+a.left:hover::after {
+    /* visibility: visible; */
+    width: 100%;
+  }
+  .circle-image .btn{
+    color: #212529;
+    background-color:#ffc107;
+    border:2px solid  #ffc107;
+    transition: all 400ms;
+}
+
+.circle-image .btn:hover{
+    background-color: transparent;
+    border: 2px solid #ffc107;
+}
+.welcome .btn{
+    color: #212529;
+    background-color:#28a745;
+    border:2px solid  #28a745;
+    transition: all 400ms;
+    
+  }
+  .welcome .btn:hover{
+    background-color:transparent;
+    border:2px solid  #28a745;
+    
+  }
+  
+@media screen and (max-width:1200px){
+    circle-image{
+        background: url("../images/1.png") no-repeat right top/65%;
+        height:60vh;
+        
+        }
+
+        
+}
+@media screen and (max-width:992px){
+    circle-image{
+        margin-top: 0px;
+        /* position: relative; */
+        background: url("../images/1.png") no-repeat right top/65%;
+        height:55vh;
+        
+        }
+
+        
+}
+@media screen and (max-width:576px){
+    circle-image{
+        margin-top: 0px;
+        /* position: relative; */
+        background: url("../images/1.png") no-repeat right top/65%;
+        height:55vh;
+        
+        }
+        .circle-image nav{
+            display: none;
+            
+            }
+        .mange-order-one{
+            order: 2;
+            margin-top: 1.5em;
+        }
+        .mange-order-two{
+            order: 1;
+            padding: 0 0 0 1.5em;
+        }
+        
+}
