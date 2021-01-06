@@ -7,25 +7,39 @@
     <link rel="shortcut icon" href="images/favicon.ico">
     <link rel="stylesheet" href="css/owl.carousel.min.css">
     <link rel="stylesheet" href="css/owl.theme.default.min.css">
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
     <link rel="stylesheet" href="css/style.css">
     <title>Welcome to Foody</title>
 </head>
 
 <body>
-    <section class="container-fluid circle-image ">
+    <section class="container-fluid circle-image">
         <div class="container d-flex flex-column ">
-            <header class="row justify-content-between py-4">
+            <header class="row justify-content-between py-4 navbar navbar-expand-lg navbar-light " style="background-color: transparent;">
                 <div class="logo">Foody</div>
-                <nav>
-                    <ul class="d-flex">
-                        <li class="px-5 "><a href="" class="text-white left">HOME</a></li>
-                        <li class="px-5 "><a href="" class="text-white left">ABOUT</a></li>
-                        <li class="px-5 "><a href="" class="text-white left">MENU</a></li>
-                        <li class="px-5 "><a href="" class="text-white left">BLOGS</a></li>
+                <button class="navbar-toggler" type="button" data-toggle="collapse"
+                    data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <nav class="collapse navbar-collapse flex-grow-0 " id="navbarSupportedContent">
+                    <ul class="navbar-nav text-md-light">
+                        <li class="nav-item px-4">
+                            <a class="nav-link left" href="#">HOME</a>
+                        </li>
+                        <li class="nav-item px-4">
+                            <a class="nav-link left" href="#">ABOUT</a>
+                        </li>
+                        <li class="nav-item px-4">
+                            <a class="nav-link left" href="#">MENU</a>
+                        </li>
+                        <li class="nav-item px-4">
+                            <a class="nav-link left" href="#">BLOGS</a>
+                        </li>
                     </ul>
                 </nav>
             </header>
+
             <div class="row pt-5 mt-5">
                 <div class="col-md-6">
                     <h1 class="pb-3">WE LOVE <br> TO SERVE <br> DELICIOUS FOOD</h1>
@@ -153,39 +167,49 @@
     <footer class="bg-footer py-5 text-white">
         <div class="container py-5">
             <div class="row">
-                <div class="col-4 py-3">
+                <div class="col-md-4 py-3">
                     <h4 class="mb-4">CONTACTS</h4>
                     <P>1800-586-975</P>
                     <P>order.foody@mail.com</P>
                     <P>71-B,Park Street,Kolkata - 32</P>
 
                 </div>
-                <div class="col-4 py-3">
+                <div class="col-md-4 py-3">
                     <h4 class="mb-4">QUICK LINKS</h4>
-                    <P>HOME</P>
-                    <P>ABOUT</P>
-                    <P>MENU</P>
-                    <P>BLOGS</P>
+                    <a href="#" class="text-white">
+                        <P>HOME</P>
+                    </a>
+                    <a href="#" class="text-white">
+                        <P>ABOUT</P>
+                    </a>
+                    <a href="#" class="text-white">
+                        <P>MENU</P>
+                    </a>
+                    <a href="#" class="text-white">
+                        <P>BLOGS</P>
+                    </a>
                 </div>
-                <div class="col-4 py-3">
+                <div class="col-md-4 py-3">
                     <h4 class="mb-4">NEWSLETTER</h4>
-                    <input type="text" name="" id="" placeholder="Enter Your E-mail" class="px-2 py-2">
-                    <button class="btn btn-warning ml-n2 mt-n1 " data-toggle="tooltip"  data-placement="bottom" title="Send!"><img src="images/14.png" alt=""></button>
+                    <input type="text" name="" id="" placeholder="Enter Your E-mail" class="col-8 px-2 py-2">
+                    <button class="btn btn-warning ml-n2 mt-n1 " data-toggle="tooltip" data-placement="bottom"
+                        title="Send!"><img src="images/14.png" alt=""></button>
                 </div>
             </div>
         </div>
     </footer>
 
-<script src="js/jquery-3.3.1.min.js"></script>
-<script src="js/owl.carousel.min.js"></script>
-<script src="js/owljs.js"></script>
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
-<script>
-$(document).ready(function(){
-  $('[data-toggle="tooltip"]').tooltip();   
-});
-</script>
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script src="js/owl.carousel.min.js"></script>
+    <script src="js/owljs.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $('[data-toggle="tooltip"]').tooltip();
+        });
+    </script>
 </body>
+
 </html>

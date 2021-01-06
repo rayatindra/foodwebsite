@@ -33,6 +33,9 @@ margin: 0;
 .bg-footer{
     background: url("../images/15.png") no-repeat center center/cover;
 }
+.bg-footer .btn{
+    z-index: 999;
+}
 footer input{
     background-color: transparent;
     border: 1px solid grey;
@@ -83,7 +86,45 @@ a.left:hover::after {
     border:2px solid  #28a745;
     
   }
+ 
+
+.col-8 {
+    border-right: transparent;
+  }
   
+
+  
+  .ml-n2 {
+    position: relative;
+  }
+  .navbar-light .navbar-toggler-icon {
+ background:white url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' width='30' height='30' viewBox='0 0 30 30'%3e%3cpath stroke='rgba(0, 0, 0, 0.5)' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+}
+.navbar-light .navbar-nav .nav-link {
+ color:rgba(255, 255, 255, 1);
+}
+a.left::after {
+    content: "";
+    display: block;
+    margin: auto;
+    height: 2px;
+    width: 0;
+    background: white;
+    transition: width 400ms;
+    margin-top: 5px;
+}
+
+a.left:hover::after {
+
+    visibility: visible;
+    width: 100%;
+
+}
+.navbar-light .navbar-nav .nav-link:focus,
+.navbar-light .navbar-nav .nav-link:hover {
+ color:rgba(242, 242, 242, 01);
+}
+
 @media screen and (max-width:1200px){
     circle-image{
         background: url("../images/1.png") no-repeat right top/65%;
@@ -102,8 +143,22 @@ a.left:hover::after {
         
         }
 
-        
+  .navbar-light .navbar-nav .nav-link {
+ color:rgba(0, 0, 0, .5);
 }
+
+.navbar-light .navbar-nav .nav-link:focus,
+.navbar-light .navbar-nav .nav-link:hover {
+ color:rgba(0, 0, 0, 01);
+} 
+a.left:hover::after {
+
+    visibility: hidden;
+    width: 0;
+
+}     
+}
+
 @media screen and (max-width:576px){
     circle-image{
         margin-top: 0px;
@@ -111,18 +166,6 @@ a.left:hover::after {
         background: url("../images/1.png") no-repeat right top/65%;
         height:55vh;
         
-        }
-        .circle-image nav{
-            display: none;
-            
-            }
-        .mange-order-one{
-            order: 2;
-            margin-top: 1.5em;
-        }
-        .mange-order-two{
-            order: 1;
-            padding: 0 0 0 1.5em;
         }
         
 }
